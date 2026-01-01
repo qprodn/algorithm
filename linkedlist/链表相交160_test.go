@@ -15,5 +15,5 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
 			cb = headA
 		}
 	}
-	return nil
+	return ca
 }
