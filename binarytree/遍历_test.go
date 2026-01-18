@@ -8,9 +8,20 @@ func preorderTraversal(root *TreeNode) (res []int) {
 		if node == nil {
 			return
 		}
-		traversal(node.Left)        //中
-		res = append(res, node.Val) //前
-		traversal(node.Right)       //后
+		//前
+		res = append(res, node.Val)
+		traversal(node.Left)
+		traversal(node.Right)
+
+		//中
+		//traversal(node.Left)
+		//res = append(res, node.Val)
+		//traversal(node.Right)
+
+		//后
+		//traversal(node.Left)
+		//traversal(node.Right)
+		//res = append(res, node.Val)
 	}
 	traversal(root)
 	return res
